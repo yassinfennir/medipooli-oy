@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medipooli Oy — Virallinen verkkosivusto</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#f0f0f0}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 2rem;background:rgba(10,10,10,.95);position:fixed;width:100%;top:0;z-index:100;backdrop-filter:blur(10px);border-bottom:1px solid #222}
+.logo{display:flex;align-items:center;gap:.8rem}
+.logo-icon{width:40px;height:40px;background:#1abc9c;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.9rem;color:#fff}
+.logo-text{font-size:1.2rem;font-weight:700}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{color:#888;text-decoration:none;font-size:.9rem;transition:.3s}
+.nav-links a:hover{color:#1abc9c}
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85)),url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&h=600&fit=crop') center/cover}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;margin-bottom:1rem}
+.hero h1 span{color:#1abc9c}
+.hero p{font-size:1.1rem;color:#aaa;max-width:600px;margin:0 auto 2rem}
+.btn{display:inline-block;padding:.8rem 2rem;background:#1abc9c;color:#fff;font-weight:700;border-radius:8px;text-decoration:none;transition:.3s}
+.btn:hover{transform:translateY(-2px);opacity:.9}
+section{padding:5rem 2rem;max-width:1000px;margin:0 auto}
+.section-title{font-size:1.8rem;font-weight:900;margin-bottom:2rem;text-align:center}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+.feat{background:#161616;border:1px solid #222;border-radius:12px;padding:1.5rem;text-align:center;transition:.3s}
+.feat:hover{border-color:#1abc9c;transform:translateY(-4px)}
+.feat-icon{font-size:2rem;margin-bottom:.5rem}
+.feat h3{font-size:1rem;margin-bottom:.3rem}
+.feat p{color:#888;font-size:.85rem}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px;border:1px solid #222}
+.contact{background:#111;border:1px solid #222;border-radius:12px;padding:2rem;text-align:center;margin:2rem auto;max-width:600px}
+.contact h3{margin-bottom:1rem;font-size:1.3rem}
+.contact p{color:#aaa;margin-bottom:.5rem}
+footer{border-top:1px solid #222;padding:2rem;text-align:center;color:#555;font-size:.8rem}
+.badge{display:inline-block;background:rgba(0,255,65,.1);color:#00ff41;padding:.3rem .8rem;border-radius:20px;font-size:.7rem;margin-top:1rem}
+@media(max-width:768px){.nav-links{display:none}.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo"><div class="logo-icon">MO</div><div class="logo-text">Medipooli Oy</div></div>
+<ul class="nav-links"><li><a href="#palvelut">Palvelut</a></li><li><a href="#kuvat">Kuvat</a></li><li><a href="#yhteystiedot">Yhteystiedot</a></li></ul>
+</nav>
+<div class="hero">
+<div>
+<h1>🏥 <span>Medipooli Oy</span></h1>
+<p>Terveyspalvelut — Espoo. Ammattitaitoista palvelua vuodesta 2026.</p>
+<a href="#yhteystiedot" class="btn">Ota yhteyttä</a>
+</div>
+</div>
+<section id="palvelut">
+<h2 class="section-title">Palvelumme</h2>
+<div class="features">
+<div class="feat"><div class="feat-icon">⭐</div><h3>Palvelumme</h3><p>Ammattitaitoinen palvelu Espoossa.</p></div>
+<div class="feat"><div class="feat-icon">🎯</div><h3>Ajanvaraus</h3><p>Ammattitaitoinen palvelu Espoossa.</p></div>
+<div class="feat"><div class="feat-icon">📋</div><h3>Tietoa meistä</h3><p>Ammattitaitoinen palvelu Espoossa.</p></div>
+<div class="feat"><div class="feat-icon">📞</div><h3>Yhteystiedot</h3><p>Ammattitaitoinen palvelu Espoossa.</p></div>
+</div>
+</section>
+<section id="kuvat">
+<h2 class="section-title">Kuvia meistä</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=600&fit=crop" alt="Kuva 1">
+<img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=601&h=401&fit=crop" alt="Kuva 2">
+<img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=602&h=402&fit=crop" alt="Kuva 3">
+</div>
+</section>
+<section id="yhteystiedot">
+<div class="contact">
+<h3>Ota yhteyttä</h3>
+<p>🏥 Medipooli Oy</p>
+<p>📍 Espoo, Finland</p>
+<p>📧 info@medipooli.fi</p>
+<p>Y-tunnus: 3608301-2</p>
+<div class="badge">Verkkosivut: elfennir.com</div>
+</div>
+</section>
+<footer>
+<p>&copy; 2026 Medipooli Oy. Kaikki oikeudet pidätetään.</p>
+<p style="margin-top:.5rem;color:#333">Sivusto: <a href="https://elfennir.com" style="color:#00ff41">elfennir.com</a></p>
+</footer>
+</body>
+</html>
